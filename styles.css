@@ -1,0 +1,24 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto; /* center horizontally*/
+}
+
+.box {
+    border: 5px solid rgb(0, 21, 255);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.separator-bar {
+    border-left: 2px solid rgb(0, 114, 163);
+    margin-top: 5px;
+    margin: 0 auto;
+    height: 20px;
+}
