@@ -1,7 +1,7 @@
 <img src="images/bookremarks session view.png" width="250">
 
-# BookRemark
-A better way to track content via bookmarking.
+# BookRemarks
+A better way to track content via bookmarking and content capture.
 
 # Summary
 A Chrome extension groundwork, building towards a tool to help organize captured data for ease of use later.
