@@ -1,4 +1,4 @@
-console.log('sidepane.js is loaded')
+console.log('sidepanel.js is loaded')
 
 sessionData = new Array();
 
