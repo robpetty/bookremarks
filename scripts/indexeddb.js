@@ -13,7 +13,7 @@ async function initDb() {
     request.onupgradeneeded = (event) => {
       console.log("idb onupgradeneeded");
 
-      // onsuccess will fire when onupgradedneed completes
+      // onsuccess will fire when onupgradeneeded completes
       // so no need to resolve with db here.
       let db = event.target.result;
 
