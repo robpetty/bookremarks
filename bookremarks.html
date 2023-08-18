@@ -3,6 +3,96 @@
 
 <head>
     <title>BookRemarks</title>
+    <style>
+        .collapsible {
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+
+        .collapsible-header {
+            padding: 10px;
+            cursor: pointer;
+            background-color: lightgray;
+        }
+
+        .collapsible-content {
+            padding: 30px;
+            background-color: rgb(255, 184, 184);
+            max-height: 500px;
+            overflow-y: scroll;
+        }
+
+        .sessionHeader {
+            display:flex;
+            flex-direction: row;
+            align-content:center;
+        }
+
+        .sessionName {
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .sessionHeaderActive {
+            font-size: 16px;
+            font-weight: bold;
+            color:red;
+            text-decoration:solid;
+        }
+
+        thead,
+        tfoot {
+            background-color: #3f87a6;
+            color: #fff;
+        }
+
+        tbody {
+            background-color: #e4f0f5;
+        }
+
+        caption {
+            padding: 10px;
+            caption-side: bottom;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            font-size: 0.8rem;
+            width:100%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 5px 10px;
+        }
+
+        #content > table > thead > tr > td {
+            text-align:center;
+        }
+
+        td {
+            vertical-align: top;
+            text-align: left;
+        }
+
+        #content > table > tbody > tr:nth-child(1) > td:nth-child(1) {
+            width:175px;
+        }
+
+        #content > table > tbody > tr:nth-child(3) > td:nth-child(2) {
+            width:max-content;
+        }
+
+        .hrsytyle {
+            padding-top: 10px;
+            padding-bottom: 10 px;
+        }
+    </style>
     <script src="blank.js"></script>
 </head>
 
@@ -10,6 +100,7 @@
     <h1>BookRemarks</h1>
 
     <h1>Your Session Data</h1>
+    <sub>* Active session.</sub>
     <div id="content"></div>
 </body>
 

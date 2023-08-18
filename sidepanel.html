@@ -4,17 +4,29 @@
 <head>
     <title>BookRemarks</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="sidepanel.js"></script>
 </head>
 
 <body>
     <h1>BookRemarks</h1>
 
-    <div id="startTime"></div>
+    <div id="sessionName" class="editable" contenteditable="true"></div>
     <br />
-    <div class="box-container" id="container"></div>
+    <div id="startDate"></div>
     <br />
-    <div id="bottom"></div>
-</body>
+    <select id="sessionDropdown"></select>
+    <br /><br />
+    <div class="box-container" id="timeline"></div>
+    <br />
+    <div id="bottom">
+        <div id="saveDate"></div>
+    </div>
 
+
+    <div id="toast-container" class="toast-container">
+        <div id="toast" class="toast"></div>
+    </div>
+</body>
 </html>
+
+<script src="sidepanel.js"></script>
+<script src="timelineRenderer.js"></script>
