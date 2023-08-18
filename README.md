@@ -38,6 +38,6 @@ A Chrome extension groundwork, building towards a tool to help organize captured
 
 # v0.1.0
 
-<img src="images/bookremarks session view.png-v1" width="250">
+<img src="images/bookremarks session view-v1.png" width="250">
 
 - Initial code. Minimal features with focus on showing the overall concept. Highlighted text would be captured to the timeline in the sidepanel. Bookmark creation would be captured as well. Metadata about these events would be captured. Data saved into Chrome localStorage as an example.
