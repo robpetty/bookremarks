@@ -10,15 +10,10 @@ async function initDb() {
   return new Promise((resolve, reject) => {
     let request = indexedDB.open(dbName, 1);
 
-    request.onerror = (event) => {
-      alert("Error Event, check console");
-      console.error(event);
-    };
-
     request.onupgradeneeded = (event) => {
-      console.log("idb onupgradeneeded firing");
+      console.log("idb onupgradeneeded");
 
-      // onsuccess will fire are onupgradedneed completes
+      // onsuccess will fire when onupgradedneed completes
       // so no need to resolve with db here.
       let db = event.target.result;
 
@@ -26,11 +21,17 @@ async function initDb() {
         keyPath: sessionKeyPath,
         autoIncrement: true,
       });
+
       objectStore.createIndex("currentSessionIndex", "currentSession");
     };
 
     request.onsuccess = (event) => {
       resolve(event.target.result);
+    };
+
+    request.onerror = (event) => {
+      alert("Error Event, check console");
+      console.error(event);
     };
   });
 }

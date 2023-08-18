@@ -30,6 +30,7 @@ A Chrome extension groundwork, building towards a tool to help organize captured
 # v0.2.0
 
 - Adding IndexedDB storage to replace localStorage.
+- Added session handling.
 - Code refactoring to start to further pull rendering code away from data interaction code. timelineRenderer.js added.
 - Additional styling created for both the side panel, and about:blank/new tab views.
 - manifest versioning updated to reflect Github version. Added version_name to allow for alphanumeric entry. See https://developer.chrome.com/docs/extensions/mv3/manifest/version/.
